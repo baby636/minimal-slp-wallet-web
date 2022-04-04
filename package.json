@@ -12,7 +12,9 @@
     "docs": "./node_modules/.bin/apidoc -i src/ -o docs",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "coverage:report": "nyc --reporter=html mocha test/unit/ --exit",
-    "build": "browserify index.js -p tinyify --s SlpWallet -o dist/minimal-slp-wallet-web.js"
+    "build": "browserify index.js -p tinyify --s SlpWallet -o dist/minimal-slp-wallet-web.js",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "keywords": [
     "bitcoin",
@@ -39,7 +41,8 @@
     "apidoc": "^0.25.0",
     "bch-donation": "^1.1.0",
     "crypto-js": "^4.0.0",
-    "tinyify": "^3.0.0"
+    "tinyify": "^3.0.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "chai": "^4.2.0",
@@ -63,5 +66,6 @@
         "npmPublish": true
       }
     ]
-  }
+  },
+  "snyk": true
 }
