@@ -35,9 +35,9 @@
   },
   "repository": "Permissionless-Software-Foundation/minimal-slp-wallet-web",
   "dependencies": {
-    "@psf/bch-js": "3.10.3",
+    "@psf/bch-js": "4.15.1",
     "apidoc": "^0.25.0",
-    "bch-donation": "^1.1.0",
+    "bch-donation": "^1.1.1",
     "crypto-js": "^4.0.0",
     "tinyify": "^3.0.0"
   },
@@ -50,7 +50,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-standard": "^4.0.1",
-    "mocha": "^8.2.0",
+    "mocha": "^8.3.0",
     "nyc": "^15.1.0",
     "semantic-release": "^17.2.4",
     "sinon": "^9.2.0",
